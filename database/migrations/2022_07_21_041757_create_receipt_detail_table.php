@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('receipt_detail', function (Blueprint $table) {
             $table->id();
             $table->integer('receipt_id');
+            $table->integer('user_id');
             $table->integer('status')->default(0);
             $table->timestamps();
         });
